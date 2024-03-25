@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { images } from "../../constants";
 
 import "./Header.scss";
+import { AppWrap } from "../../wrapper";
 
 const scaleVariants = {
   whileInView: {
@@ -17,9 +18,9 @@ const scaleVariants = {
 
 const Header = () => {
   const sentences = [
-    "Hey! I am Abhishek Mandal",
-    "This is another sentence",
-    "And here goes one more",
+    "Hey there!",
+    "I am Abhishek Mandal",
+    "Welcome to my Portfolio...",
   ];
 
   const [typedText, setTypedText] = useState("");
@@ -128,4 +129,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default AppWrap(Header, "home");
